@@ -103,9 +103,10 @@ class EmployeTest {
     @CsvSource({
             "0,,'M12345',1.0,1700.0", // Manager à plein temps sans ancienneté
             "0,,'T12345',1.0,1000.0", // Technicien à plein temps sans ancienneté
+            "0,3,'T12345',1.0,3300.0", // Technicien à plein temps sans ancienneté avec une performance 3
+            "0,1,'T12345',1.0,1000.0", // Technicien à plein temps sans ancienneté avec une performance de base
             //"0,,'M12345',0.5,850.0", // Manager à mi-temps sans ancienneté
             //"5,,'M12345',1.0,2200.0", // Manager à plein temps avec 5 années d'ancienneté
-            "0,3,'T12345',1.0,3300.0", // Technicien à plein temps sans ancienneté avec une performance 3
     })
 
     // 4 données d'entrée => remplacer par les paramètres
