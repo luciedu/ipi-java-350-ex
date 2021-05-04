@@ -103,9 +103,9 @@ class EmployeTest {
     @CsvSource({
             "0,,'M12345',1.0,1700.0", // Manager à plein temps sans ancienneté
             "0,,'T12345',1.0,1000.0", // Technicien à plein temps sans ancienneté
-            "0,,'M12345',0.5,850.0", // Manager à mi-temps sans ancienneté
-            "5,,'M12345',1.0,2200.0", // Manager à plein temps avec 5 années d'ancienneté
-
+            //"0,,'M12345',0.5,850.0", // Manager à mi-temps sans ancienneté
+            //"5,,'M12345',1.0,2200.0", // Manager à plein temps avec 5 années d'ancienneté
+            "0,3,'T12345',1.0,3300.0", // Technicien à plein temps sans ancienneté avec une performance 3
     })
 
     // 4 données d'entrée => remplacer par les paramètres
@@ -115,10 +115,10 @@ class EmployeTest {
 
         //Given
         LocalDate dateEmbauche = LocalDate.now().minusYears(nbAnneesAnciennete);
-
         //Initialise l'employé à partir des données d'entrée
         Employe employe = new Employe("Doe", "John", matricule,
                 dateEmbauche, Entreprise.SALAIRE_BASE, performance, tempsPartiel);
+
         //When
         Double primeCalculee = employe.getPrimeAnnuelle();
 
@@ -127,5 +127,6 @@ class EmployeTest {
         Assertions.assertThat(primeCalculee).isEqualTo(primeObtenue);
     }
 
+    // => la methode public Double getPrimeAnnuelle() est couverte à 100% avec les différents scénarios de test
 
 }
