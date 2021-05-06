@@ -1,0 +1,18 @@
+10:24:24 [main] INFO  com.ipiecoles.java.java350.service.EmployeService .embaucheEmploye                - Embauche de l'employé Didou Koala diplomé de INGENIEUR en tant que MANAGER avec un taux d'activité de 1.0
+10:24:24 [main] INFO  com.ipiecoles.java.java350.service.EmployeService .embaucheEmploye                - Employé créé : com.ipiecoles.java.java350.model.Employe@7316f2ec
+10:24:24 [main] INFO  com.ipiecoles.java.java350.service.EmployeService .embaucheEmploye                - Embauche de l'employé Jean Aurore diplomé de INGENIEUR en tant que MANAGER avec un taux d'activité de 1.0
+10:24:24 [main] WARN  com.ipiecoles.java.java350.service.EmployeService .embaucheEmploye                - Attention, seuil des 90000 matricules atteints !
+10:24:24 [main] ERROR com.ipiecoles.java.java350.service.EmployeService .embaucheEmploye                - L'employé de matricule M99999 existe déjà en BDD
+10:24:24 [main] INFO  com.ipiecoles.java.java350.service.EmployeService .embaucheEmploye                - Embauche de l'employé Jean Aurore diplomé de INGENIEUR en tant que MANAGER avec un taux d'activité de 1.0
+10:24:24 [main] WARN  com.ipiecoles.java.java350.service.EmployeService .embaucheEmploye                - Attention, seuil des 90000 matricules atteints !
+10:24:24 [main] ERROR com.ipiecoles.java.java350.service.EmployeService .embaucheEmploye                - L'employé de matricule M99999 existe déjà en BDD
+10:24:24 [main] INFO  com.ipiecoles.java.java350.service.EmployeService .embaucheEmploye                - Embauche de l'employé Jean Aurore diplomé de INGENIEUR en tant que MANAGER avec un taux d'activité de 1.0
+10:24:24 [main] ERROR com.ipiecoles.java.java350.service.EmployeService .embaucheEmploye                - Limite des 100000 matricules atteinte !
+10:24:24 [main] INFO  com.ipiecoles.java.java350.service.EmployeService .embaucheEmploye                - Embauche de l'employé Jean Aurore diplomé de INGENIEUR en tant que MANAGER avec un taux d'activité de 1.0
+10:24:24 [main] ERROR com.ipiecoles.java.java350.service.EmployeService .embaucheEmploye                - Limite des 100000 matricules atteinte !
+10:24:24 [main] INFO  com.ipiecoles.java.java350.service.EmployeService .embaucheEmploye                - Embauche de l'employé Jean Aurore diplomé de INGENIEUR en tant que MANAGER avec un taux d'activité de 1.0
+10:24:24 [main] INFO  com.ipiecoles.java.java350.service.EmployeService .embaucheEmploye                - Aucun matricule trouvé, attribution du matricule par défaut 00001
+10:24:24 [main] INFO  com.ipiecoles.java.java350.service.EmployeService .embaucheEmploye                - Employé créé : com.ipiecoles.java.java350.model.Employe@bc2ccc5e
+10:24:24 [main] INFO  com.ipiecoles.java.java350.service.EmployeService .embaucheEmploye                - Embauche de l'employé Jean Aurore diplomé de INGENIEUR en tant que MANAGER avec un taux d'activité de 0.5
+10:24:24 [main] INFO  com.ipiecoles.java.java350.service.EmployeService .embaucheEmploye                - Aucun matricule trouvé, attribution du matricule par défaut 00001
+10:24:24 [main] INFO  com.ipiecoles.java.java350.service.EmployeService .embaucheEmploye                - Employé créé : com.ipiecoles.java.java350.model.Employe@f66f3d45
