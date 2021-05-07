@@ -247,4 +247,44 @@ class EmployeTest {
         Assertions.assertThat(salaireEstime).isEqualTo(newSalaire);
     }
 
+
+    @ParameterizedTest(name = "anneeActuelle {0} => nbRTT {1}")
+    @CsvSource({
+            "'2019-01-01',8" , // 2019 : l'année est non bissextile, a débuté un mardi et il y a 10 jours fériés ne tombant pas le week-end.
+            "'2021-01-01',10" , //2021 : l'année est non bissextile, a débuté un vendredi et il y a 7 jours fériés ne tombant pas le week-end.
+            "'2022-01-01',10" , //2022 : l'année est non bissextile, a débuté un samedi et il y a 7 jours fériés ne tombant pas le week-end.
+            "'2032-01-01',11" , //2032 : l'année est bissextile, a débuté un jeudi et il y a 7 jours fériés ne tombant pas le week-end.
+            "'2044-01-01',9" , //2044 : l'année est bissextile, a débuté un vendredi et il y a 8 jours fériés ne tombant pas le week-end.
+
+    })
+    public void testGetNbRTT(LocalDate anneeActuelle, Integer nbRTT){
+        //given
+        Employe employe = new Employe();
+
+
+        //when
+
+        Integer RTTEstime = employe.getNbRtt(anneeActuelle);
+
+        //then
+        //resultat attendus
+        Assertions.assertThat(RTTEstime).isEqualTo(nbRTT);
+
+    }
+
+    @Test
+    public void testGetNbRtt2032() {
+        //Given
+        LocalDate anneeActuelle = LocalDate.now().plusYears(11);
+
+        //Initialise l'employé à partir des données d'entrée
+        Employe employe = new Employe();
+
+        //When
+        Integer nbRTT = employe.getNbRtt(anneeActuelle);
+
+        //Then
+        Assertions.assertThat(nbRTT).isEqualTo(11);
+    }
+
 }
